@@ -6,9 +6,9 @@ import webhookRoutes from "./routes/webhook.js";
 const app = express();
 app.use(bodyParser.json());
 
-app.use("/", (req, res) => {
-  res.send("Hello World");
-});
+// app.use("/", (req, res) => {
+//   res.send("Hello World");
+// });
 
 app.use("/api", webhookRoutes);
 
